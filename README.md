@@ -66,14 +66,14 @@ void loop(){
 ## How It Works
 
 1. Initialization:
-   - o The setup() function initializes the pins for the ultrasonic sensor and the pump.
-   - o It also sets a reference height (HT) and a set point (SetPoint) for the desired water level.
+   - The setup() function initializes the pins for the ultrasonic sensor and the pump.
+   - It also sets a reference height (HT) and a set point (SetPoint) for the desired water level.
 2. Distance Measurement:
-   - o The loop() function triggers the ultrasonic sensor to measure the distance.
-   - o The measured distance is converted to centimeters, and the current water level (H2) is calculated by subtracting the distance from the reference height.
+   - The loop() function triggers the ultrasonic sensor to measure the distance.
+   - The measured distance is converted to centimeters, and the current water level (H2) is calculated by subtracting the distance from the reference height.
 3. Pump Control:
-   - o The pump is activated if the current water level is above the set point.
-   - o If the water level is at or below the set point, the pump is turned off.
+   - The pump is activated if the current water level is above the set point.
+   - If the water level is at or below the set point, the pump is turned off.
 
 ## Usage
 
@@ -83,6 +83,6 @@ void loop(){
 
 ## Notes
 
-- • Ensure the ultrasonic sensor is properly positioned for accurate measurements.
-- • Adjust the reference height (HT) and set point (SetPoint) as needed based on your specific requirements.
-- • Use a relay or transistor to control the pump, as the Arduino cannot drive a pump directly.
+- Ensure the ultrasonic sensor is properly positioned for accurate measurements.
+- Adjust the reference height (HT) and set point (SetPoint) as needed based on your specific requirements.
+- Use a relay or transistor to control the pump, as the Arduino cannot drive a pump directly.
